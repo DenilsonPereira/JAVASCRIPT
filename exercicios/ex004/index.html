@@ -4,14 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudando JS</title>
+    <title>Dados com JS</title>
+    <style>
+        body{
+            font: 12pt Arial;
+            background-color: #A68F72;
+            color: #0D0D0D;
+        }
+        button{
+            font-size: 12pt;
+            font-weight: bold;
+            padding: 30px;
+            background-color: #594432;
+            color: #0D0D0D;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: #6b533d;
+            color: #0D0D0D;
+            box-shadow: 0 0 4px 4px #0d0d0d83;
+        }
+    </style>
 </head>
 <body>
+    <h1>Trabalhando com Dados v2.0</h1>
+    <button onclick="inicio()">Clique para começar</button>
+    <section id="resultado">
+        <p></p>
+    </section>
 
     <script>
-        var nome = window.prompt('Qual o nome: ')
-        document.write(`Seu nome tem ${nome.length} letras <br>`)
-        document.write(`Seu nome em maiúscula é ${nome.toUpperCase()}`)
+        function inicio(){
+            let nome = window.prompt('Qual é o seu nome? ')
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um prazer te conhecer! &#x1f596;`
+        }
     </script>
 </body>
 </html>
