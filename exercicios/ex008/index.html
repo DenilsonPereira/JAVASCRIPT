@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body{
+            font: 12pt Arial;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+        button{
+            font-size: 12pt;
+            padding: 30px;
+            background-color: #8E05C2;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: #700B97;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vários calculos em JS</h1>
+    <button onclick="calc()">Clique para calcular</button>
+    <section id="resultado">
+        <p></p>
+    </section>
+    <script>
+        function calc(){
+            var n = Number(window.prompt('Digite um número: '))
+            var ab = Math.abs(n)
+            var pint = Math.trunc(n)
+            var vint = Math.round(n)
+            var rq = Math.sqrt(n)
+            var rc = Math.cbrt(n)
+
+            var res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>O número a ser analisado é <strong>${n}</strong></p>
+            <hr>
+            <p>O seu valor absoluto é ${ab}</p>
+            <p>A sua parte inteira é ${pint}</p>
+            <p>O valor inteiro mais próximo é ${vint}</p>
+            <p>A sua raiz quadrada é ${rq}</p>
+            <p>A sua raiz cúbica é ${rc}</p>
+            <p>O valor de ${n}<sup>2</sup> é ${n**2}</p>
+            <p>O valor de ${n}<sup>3</sup> é ${n**3}</p>`
+        }
+    </script>
+</body>
+</html>
