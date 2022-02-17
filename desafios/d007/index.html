@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor R$ -> US$</title>
+    <style>
+        body{
+            font: 12pt Arial;
+            background-color: #044040;
+            color: #F2F2F2;
+        }
+        button{
+            font-size: 12pt;
+            padding: 30px;
+            background-color: #D92525;
+            color: #F2F2F2;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: #8C1F28;
+            box-shadow: 0 0 3px 3px #d92525c0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de R$ -> US$</h1>
+    <button onclick="converter()">Converter</button>
+    <section id="resultado">
+        <p>Clique no botão acima para iniciar.</p>
+    </sectio0n>
+    <script>
+        var dol = Number(window.prompt('Antes de mais nada. Quanto está a cotação do dólar agora?'))
+        function converter(){
+            var real = Number(window.prompt('Quantos R$ você tem na carteira? '))
+            var conv = real / dol
+            var res = window.document.getElementById('resultado')
+            res.innerHTML = `<h2>O valor de ${real.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em dólares é:</h2>
+            <p>${conv.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})} (Dólares)</p>`
+        }
+    </script>
+</body>
+</html>

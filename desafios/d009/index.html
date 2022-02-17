@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste de salário</title>
+    <style>
+        body{
+            font: 12pt Arial;
+            background-color: #F0F0F2;
+            color: #020202;
+        }
+        button{
+            font-size: 12pt;
+            padding: 20px;
+            border: 2px solid #5b48d956;
+            border-radius: 5px;
+            background-color: #04D9C4;
+            color: #F0F0F2; 
+        }
+        button:hover{
+            background-color: #02aa99;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reajuste salarial</h1>
+    <button onclick="reajuste()">Reajustar salário</button>
+    <section id="novo">
+        <p>Clique no botão para iniciar.</p>
+    </section>
+
+    <script>
+        function reajuste(){
+            var nome = window.prompt('Qual é o nome do funcionário?')
+            var sal = Number(window.prompt(`Qual é o salário de ${nome}?`))
+            var rej = Number(window.prompt(`O salário de ${nome}, será reajustado em quantos %?`))
+            var acr = (sal * rej)/100
+            var novo = sal + acr
+            var nov = window.document.getElementById('novo')
+            nov.innerHTML = `<h2>${nome} recebeu um aumento salarial!</h2>
+            <p>O salário atual era ${sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.</p>
+            <p>Com o aumento de ${rej}%, o salário vai aumentar ${acr.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} no próximo mês.</p>
+            <p>E a partir daí, ${nome} vai passar a ganhar ${novo.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.</p>`
+        }
+    </script>
+</body>
+</html>
