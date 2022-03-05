@@ -1,6 +1,10 @@
 body{
-    font: 12pt Arial;
+    font: normal 15pt Arial;
     background-color: rgb(72, 72, 236);
+}
+div{
+    text-align: center;
+    padding: 8px;
 }
 header{
     text-align: center;
