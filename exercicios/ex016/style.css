@@ -1,6 +1,6 @@
 body{
     font: 15pt Arial;
-    background-color: #4949fd;
+    background-color: #13678A;
 }
 header{
     color: #FFFFFF;
@@ -8,12 +8,37 @@ header{
 }
 section{
     background-color: #FFFFFF;
-    width: 500px;
+    width: 300px;
     height: auto;
     margin: auto;
     padding: 15px;
     border-radius: 20px;
     box-shadow: 0 2px 4px 4px #00000056;
+}
+#fim{
+    position: relative;
+    left: 22px;
+}
+#inicio{
+    position: relative;
+    left: 8px;
+}
+#btn{
+    background-color: #012030;
+    color: #FFFFFF;
+    font-size: 12pt;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 2px 2px #0000007c;
+    padding-top: 15px;
+    padding-right: 120px;
+    padding-bottom: 15px;
+    padding-left: 120px;
+}
+#btn:hover{
+    background-color: #001a27;
+    cursor: pointer;
 }
 footer{
     color: #FFFFFF;
