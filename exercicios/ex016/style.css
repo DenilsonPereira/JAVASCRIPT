@@ -15,11 +15,11 @@ section{
     border-radius: 20px;
     box-shadow: 0 2px 4px 4px #00000056;
 }
-#fim{
+#txtf{
     position: relative;
     left: 22px;
 }
-#inicio{
+#txti{
     position: relative;
     left: 8px;
 }
