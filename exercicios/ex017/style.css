@@ -16,8 +16,10 @@ section{
     box-shadow: 2px 2px 8px 2px #00000060;
 }
 select{
-    width: 200px;
+    width: 300px;
+    height: 150px;
     text-align: center;
+    border-radius: 5px;
 }
 #txtbtn{
     border: none;
@@ -27,6 +29,9 @@ select{
     border-radius: 5px;
     background-color: #3981BF;
     color: #FFFFFF;
+}
+#divSel{
+    margin-left: 50px;
 }
 #txtbtn:hover{
     background-color: #285a86;
