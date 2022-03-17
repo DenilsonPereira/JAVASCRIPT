@@ -1,0 +1,33 @@
+body{
+    font: 15pt Arial;
+    background-color: #3981BF;
+}
+h1, footer{
+    color: #FFFFFF;
+    text-align: center;
+}
+section{
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 200px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 2px #00000060;
+}
+#btn{
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3981BF;
+    color: #FFFFFF;
+}
+#btn:hover{
+    background-color: #285a86;
+    cursor: pointer;
+}
+#inp{
+    padding: 10px 0px 10px 0px;
+}
