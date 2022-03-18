@@ -1,5 +1,5 @@
 body{
-    font: 15pt Arial;
+    font: 10pt Arial;
     background-color: #3981BF;
 }
 h1, footer{
@@ -8,7 +8,7 @@ h1, footer{
 }
 section{
     background-color: #FFFFFF;
-    width: 400px;
+    width: 350px;
     height: 200px;
     padding: 30px;
     margin: auto;
@@ -16,7 +16,7 @@ section{
     box-shadow: 2px 2px 8px 2px #00000060;
 }
 select{
-    width: 300px;
+    width: 250px;
     height: 150px;
     text-align: center;
     border-radius: 5px;
